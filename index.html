@@ -1,0 +1,162 @@
+<html>
+<title>
+Resources
+</title>
+    <head>      
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" />
+        </style>
+        <script>
+            // show the given page, hide the rest
+            function show(elementID) {
+                // try to find the requested page and alert if it's not found
+                var ele = document.getElementById(elementID);
+                if (!ele) {
+                    alert("no such element");
+                    return;
+                }
+
+                // get all pages, loop through them and hide them
+                var pages = document.getElementsByClassName('page');
+                for(var i = 0; i < pages.length; i++) {
+                    pages[i].style.display = 'none';
+                }
+
+                // then show the requested page
+                ele.style.display = 'block';
+            }
+        </script>
+    </head>
+    <body>
+      <p>   
+	        <span id ="Home" onclick="show('HomePage');">Resources</span>
+			<br/> <br/>
+     </p>
+    
+	<div id="HomePage" class="page" style="">
+         
+		<h1 id="main"><b> Welcome to the Resources Page </b></h1>
+		<br/>
+		Here you will find all the required Academic resources
+		<br/><br/><br/>
+		<span id="pages" onclick="show('Curriculum');">Curriculum</span>
+             <br/> <br/>	
+		<span id="pages" onclick="show('QuestionPapers');">Question Papers</span>
+             <br/> <br/>			
+        <span id="pages" onclick="show('Books');">eBooks</span>
+			<br/> <br/>
+    	<span id="pages" onclick="show('Timetable');">Timetable</span>
+	 </div>
+	 
+    <div id="Curriculum" class="page" style="display:none">
+	    <h1><b>Curriculum</b></h1>
+        <h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSZlVGNU80Y29mRlE" target="_blank">Ceramic Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSLVptSFlxTnQ3a2s" target="_blank">Chemistry</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSam5EeXJPU0xhTWc" target="_blank">Civil Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSM1VKQlNZaFJlSkU" target="_blank">Computer Science and Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSclUtcU00UThLUHc" target="_blank">Electrical Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSdXdLaTdBUE5ybjQ" target="_blank">Electronics Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSSDNicEtpZUZSdkE" target="_blank">Mechanical Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSeFpOSDlfWHlQYlU" target="_blank">Metallurgical Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSenNfRm92eXJSelk" target="_blank">Mining Engineering</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnScmJESU1VeURlSFk" target="_blank">Mathematics and Computing</a></b></h3>
+		<h3><b><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSckxRQ2xSTXFoQTA" target="_blank">Pharmaceutics</a></b></h3>
+    </div>
+    <div id="QuestionPapers" class="page" style="display:none">
+	    <h1><b>Question Papers</b></h1>
+		<br/>
+	<div id="content">
+        <a href="https://drive.google.com/open?id=0BwSLQnNZUNnSV0gtSEJiRnFDRXc" target="_blank" > Computer Programming CSO-101 </a>
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnSaVlDcE4zZTBZWjQ" target="_blank" > Chemistry CY-101 </a> 
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnSZkxVRm9LVHNHTVU" target="_blank"> Chemistry Lab CY-101 Lab </a>
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnScEZhSERvZnIxa00" target="_blank"> Mathematics-1 MA-101 </a>
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnSemNXelJBSEJ2eEU" target="_blank"> Mathematics-2 MA-102 </a>
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnSV1E5QmUya2w4SVE" target="_blank"> Physics-1 PHY-101 </a>
+		<br/><br/>
+		<a href="https://drive.google.com/open?id=0BwSLQnNZUNnSWEtRdnBNWjE1eXM" target="_blank"> Physics-2 PHY-102 </a>
+	</div>
+    </div>
+    <div id="Books" class="page" style="display:none">
+	
+        <h1><b>eBooks</b></h1>
+		<h3><b>Computer Programming (CSO-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSMTU3TEFxU3d1YTA" target="_blank"> Let Us C - Yashvant Kanetkar</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSTTV4ZjVGQjgzMjQ" target="_blank"> The C Programming Language - Dennis and Ritchie</a></li>
+		</ui>
+		<br/>
+		<h3><b>Physics-1 (PHY-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSUmVJWmFTOUdIMzQ" target="_blank"> Problems in General Pysics - I.E. Irodov</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnScm9hOVNlVWNQZTQ" target="_blank" > An Introduction to Mechanics - Daniel Kleppner and Robert Kolenkow</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSTHV6R2NCdFhCOE0" target="_blank" >Vector Analysis - Andrew Spigel</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Physics-2 (PHY-102)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSYUhtOFY3ZlVoTnc" target="_blank"> Electromagnetism - Griffith</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSWW5TTExOTUFUZVE" target="_blank"> Electromagnetic Field and Waves - Lorraine and paulson</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnScThCR0RPYl9ucEE" target="_blank"> Engineering Electromagnetics - William Hyatt</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Mathematics-1 (MA-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSeWNEOUhsaE8wRGs" target="_blank" >Real Analysis - J.Bartle</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSWnl2VFNWRjhfN1k" target="_blank" >Calculus - Thomas and Phinney</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Mathematics-2 (MA-102)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnScWdTR0VrelVfQzQ" target="_blank" >Topics in Alegebra - I.N. Herstein</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSbUJrVEx1WTFsZ1k" target="_blank">Linear Algebra - Hoffman and Kunze</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSUEdLZFlpQ0tWYWs" target="_blank">Advanced Engineering Mathematics - Erwin Kreyzig</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Chemistry (CY-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSX1M2WHBCQ0dTVms" target="_blank" >Textbook of Quantitative Chemical Analysis - Vogel</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSYlp4T3ZKMHh1YVk" target="_blank" >Physical Chemistry - Peter W. Atkins</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSbWhBQmZNLU43T2M" target="_blank" >A Guidebook to Mechanism in Organic Chemistry - Peter Stykes</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSZFdySXo5V1dfc3c" target="_blank" >Concise Inorganic Chemistry - J.D Lee</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Fundamentals of Electrical Engineering (EO-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSdGFmQ09Dc09abkE" target="_blank" >Electronic Devices and Circuit Theory - Robert Boylestad</a></li>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSU2N5NzlRQ2hzWE0" target="_blank" >Electricity and Magnetism - EM Purcell</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Electrical Engineering (EE-101)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSeTM1czFDVjFoWVE" target="_blank" >Linear Integrated Circuit - Roy Chaudhary</a></li>
+		</ui>
+		<br/>
+		
+		<h3><b>Information Technology Workshop-1 (ITW-1)</b></h3>
+		<ui>
+		<li><a href="https://drive.google.com/open?id=0BwSLQnNZUNnSVUZEeVhQS1ZfUVU" target="_blank" >Unix- Concepts and Application - Sumitabha Das</a></li>
+		</ui>
+		<br/>
+		
+				
+    </div>
+	<div id="Timetable" class="page" style="display:none">
+	    <h1><b>Timetable</b></h1>
+	<div id="content">
+        <a href="https://drive.google.com/open?id=0BwSLQnNZUNnSbzZucnNKemJrYWc" target="_blank" >Timetable Even Sem (Semester-2)</a>
+    </div>
+	</div>
+
+    </body>
+</html>

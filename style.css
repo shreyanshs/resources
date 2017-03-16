@@ -1,0 +1,63 @@
+body {
+	background-color: lightgray;
+	font-family: 'Roboto', sans-serif;
+}
+
+div {
+	text-align: center;
+}
+
+span {
+	text-decoration:underline;
+	color:black;
+	cursor:pointer;
+	
+}
+
+h1 {
+	text-decoration: underline;
+}
+
+#main {
+	text-decoration: none;
+}
+
+#HomePage{
+	font-size: 150%;
+}
+
+#Curriculum {
+	h1 {
+		font-size: 100%;
+	};
+	
+	h3 {
+		font-size: 150%;
+	};
+}
+
+#QuestionPapers {
+	h1 {
+		font-size: 100%;
+	};
+	
+}
+
+#Books h3 {
+		font-size: 150%;
+}
+
+#Timetable {
+	h1 {
+		font-size: 100%;
+	};
+	
+}
+
+li {
+	font-size: 150%;
+}
+
+#content {
+	font-size: 150%;
+}
