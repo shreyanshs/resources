@@ -19,8 +19,7 @@ window.onload=function(){
 		var subName = document.getElementById('name').value;
 		var subCode = document.getElementById('code').value;
 		var subLink = document.getElementById('link').value;
-		qpadd+=`<br/><br/><a href='${subLink}' target='_blank'>${subName}</a>`;
-		console.log(qpadd);
+		qpadd+=`<br/><br/><a href='${subLink}' target='_blank'>${subName} (${subCode})</a>`;
 		var add=document.getElementById('content');
 		add.innerHTML=qpadd;
 		
