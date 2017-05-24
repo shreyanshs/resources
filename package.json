@@ -1,0 +1,28 @@
+{
+  "name": "resources",
+  "version": "1.0.0",
+  "description": "A Webapp to provide various academic related to students of IIT-BHU",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "7.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyanshs/resources.git"
+  },
+  "author": "shreyansh26",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreyanshs/resources/issues"
+  },
+  "homepage": "https://github.com/shreyanshs/resources#readme",
+  "dependencies": {
+    "express": "4.15.3",
+    "morgan": "1.8.2",
+    "path": "0.12.7"
+  }
+}
