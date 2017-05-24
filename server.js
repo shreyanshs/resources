@@ -20,6 +20,10 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+app.get('/ui/tile.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'tile.png'));
+});
+
 const PORT = process.env.PORT || 3000; // Use 8080 for local development because you might already have apache running on 80
 app.listen(PORT, function () {
   console.log(`Resources app listening on port ${PORT}!`);
